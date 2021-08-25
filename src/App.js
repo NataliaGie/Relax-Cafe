@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import Navbar from './components/NavBar/NavBar';
+import GlobalStyle from './globalStyle';
+import MainPage from './components/HomePage';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import Spinner from './components/Spinner';
+import NotFound from './components/NotFoundPage';
+
+const MenuPage = React.lazy(() => import('./components/MenuPage/MenuPage'));
+const ContactPage = React.lazy(() => import('./components/ContactPage/ContactPage'));
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <>
+      <GlobalStyle />
+      <ScrollToTop />
+      <Suspense fallback={<Spinner />}>
+      <Switch>
+        <Route exact path="/">
+          <Navbar />
+          <MainPage />
+        </Route>
+        <Route path="/menu">
+          <Navbar 
+            dark
+            sticky />
+          <MenuPage />
+        </Route>
+        <Route path="/contact">
+          <Navbar 
+            dark
+            sticky />
+          <ContactPage />
+        </Route>
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Switch>
+      </Suspense>
+      <Footer />
+    </>
+    </Router>
   );
 }
 
