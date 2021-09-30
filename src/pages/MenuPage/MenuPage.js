@@ -1,6 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Title from '../Title';
+import Title from '../../ui/Title';
 import { MenuPageContainer } from './MenuElements';
 import Breakfast from './Breakfast';
 import Smoothies from './Smoothies';

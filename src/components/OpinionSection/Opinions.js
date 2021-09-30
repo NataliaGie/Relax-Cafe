@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Opinion from './Opinion';
-import Title from '../Title';
+import Title from '../../ui/Title';
 import Carousel from 'react-elastic-carousel';
 import opinionBackgr from '../../images/opinionBackgr.jpg';
 

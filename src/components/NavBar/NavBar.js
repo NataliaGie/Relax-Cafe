@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Logo from '../Logo';
+import Logo from '../../ui/Logo';
 import NavigationItems from './NavigationItems/NavigationItems';
 import { BurgerLink } from './BurgerMenuStyles';
 import { burgerStyles } from './BurgerMenuStyles';

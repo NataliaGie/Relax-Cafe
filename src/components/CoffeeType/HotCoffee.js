@@ -1,9 +1,9 @@
 import React from 'react'
 import hotCoffeeImg from '../../images/coffeeCup.png';
-import {SectionWrapper,
+import { SectionWrapper,
         KindWrapperLeft, 
         KindWrapperRight, 
-        CoffeeImage} from './ColdCoffee';
+        CoffeeImage } from './ColdCoffee';
 import KindOfCoffee from './KindOfCoffee';
 
 const hotCoffee = () => (

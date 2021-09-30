@@ -4,9 +4,9 @@ import { AboutContainer,
          AboutContent,
          AboutImage,
          AboutText } from './AboutElements';
-import { PrimaryButton } from '../PrimaryButton';         
+import { PrimaryButton } from '../../ui/PrimaryButton';         
 import Welcome from '../../images/welcome.jpg';
-import Title from '../Title';
+import Title from '../../ui/Title';
 
 const About = (props) => {
 

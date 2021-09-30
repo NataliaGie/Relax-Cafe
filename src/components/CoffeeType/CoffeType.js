@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import CoffeeButton from './CoffeeButton';
 import ColdCoffee from './ColdCoffee';
 import HotCoffee from './HotCoffee';
-import Title from '../Title';
+import Title from '../../ui/Title';
 
 const CoffeeType = () => {
      const [activeHot, setActiveHot] = useState(true);
