@@ -9,6 +9,7 @@ import styled from 'styled-components';
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background: transparent;
 
     @media (max-width: 870px) {
         flex-direction: column;
@@ -37,7 +38,7 @@ export const AboutImage = styled.img`
     width: 390px;
     height: 520px;
     margin: 40px 0 40px 80px;
-    box-shadow: 20px -20px 0 -3px white,
+    box-shadow: 20px -20px 0 -3px #FFFAFA,
         20px -20px black;
 
     @media (max-width: 1200px) {

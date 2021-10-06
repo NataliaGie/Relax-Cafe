@@ -17,7 +17,7 @@ const CoffeeButton = styled.button`
     height: 50px;
     margin: 20px;
     border: 2px solid ${gold};
-    background-color: ${props => props.active ? "#daa520" : "white"};
+    background-color: ${props => props.active ? "#daa520" : "#FFFAFA"};
     color: ${props => props.active ? "white" : "black"};
     font-size: 16px;
     cursor: pointer;

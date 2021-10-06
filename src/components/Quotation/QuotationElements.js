@@ -51,7 +51,7 @@ export const CustomShape = styled.div`
     }
 
     & .shape-fill {
-        fill: #FFFFFF;
+        fill: #FFFAFA;
     }
 `
 
