@@ -1,6 +1,6 @@
 # Relax Cafe
 
-Live demo: relax-cafe.netlify.app
+Live demo: https://main--relax-cafe.netlify.app/
 
 Relax Cafe is my demo project of cafe. It is a showcase of the company on the web. 
 
