@@ -1,3 +1,14 @@
+# Relax Cafe
+
+Relax Cafe is my demo project of cafe. It is a showcase of the company on the web. 
+
+# Build With
+
+- Javascript
+- React - including React Hooks
+- React Router 
+- Styled components
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
